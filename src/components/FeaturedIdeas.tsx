@@ -3,6 +3,7 @@ import IdeaCard from "./IdeaCard";
 const FeaturedIdeas = () => {
   const sampleIdeas = [
     {
+      id: "1",
       title: "AI-Powered Personal Finance Assistant",
       description: "A smart budgeting app that uses AI to analyze spending patterns, predict expenses, and provide personalized financial advice. Perfect for millennials who want to take control of their finances.",
       category: "FinTech",
@@ -21,6 +22,7 @@ const FeaturedIdeas = () => {
       trending: true
     },
     {
+      id: "2",
       title: "Sustainable Food Delivery Network",
       description: "Connect local restaurants with eco-conscious customers through a platform that prioritizes sustainable packaging, local sourcing, and carbon-neutral delivery options.",
       category: "Food & Beverage",
@@ -39,6 +41,7 @@ const FeaturedIdeas = () => {
       trending: false
     },
     {
+      id: "3",
       title: "Remote Team Collaboration Hub",
       description: "A unified workspace that combines video calling, project management, and real-time collaboration tools specifically designed for distributed teams.",
       category: "Productivity",
@@ -57,6 +60,7 @@ const FeaturedIdeas = () => {
       trending: false
     },
     {
+      id: "4",
       title: "Micro-Learning Language App",
       description: "Learn new languages through 3-minute daily sessions using spaced repetition, gamification, and AI-generated conversations tailored to your interests.",
       category: "Education",
@@ -75,6 +79,7 @@ const FeaturedIdeas = () => {
       trending: true
     },
     {
+      id: "5",
       title: "AR Interior Design Marketplace",
       description: "Allow users to visualize furniture and decor in their space using AR, then purchase items directly from partnered retailers with one-click ordering.",
       category: "E-commerce",
@@ -93,6 +98,7 @@ const FeaturedIdeas = () => {
       trending: false
     },
     {
+      id: "6",
       title: "Community Garden Management",
       description: "Digital platform to help neighborhoods organize community gardens, track plant growth, share resources, and coordinate maintenance schedules.",
       category: "Community",

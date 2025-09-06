@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Eye, Heart, Star, TrendingUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface IdeaCardProps {
+  id?: string;
   title: string;
   description: string;
   category: string;
@@ -24,6 +26,7 @@ interface IdeaCardProps {
 }
 
 const IdeaCard = ({ 
+  id,
   title, 
   description, 
   category, 
@@ -33,6 +36,13 @@ const IdeaCard = ({
   tools, 
   trending 
 }: IdeaCardProps) => {
+  const navigate = useNavigate();
+  
+  const handleViewDetails = () => {
+    if (id) {
+      navigate(`/idea/${id}`);
+    }
+  };
   const difficultyColors = {
     Beginner: "bg-green-100 text-green-700",
     Intermediate: "bg-yellow-100 text-yellow-700", 
@@ -114,7 +124,7 @@ const IdeaCard = ({
       </CardContent>
       
       <CardFooter>
-        <Button variant="gradient" className="w-full">
+        <Button variant="gradient" className="w-full" onClick={handleViewDetails}>
           View Details
         </Button>
       </CardFooter>
